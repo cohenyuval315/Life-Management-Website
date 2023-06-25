@@ -1,0 +1,11 @@
+
+SECRET_KEY = "your secret key"
+#MONGO_URI = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]"
+MONGO_API_URL = "mongodb://..."
+MONGO_DATABASE_NAME = "your db name"
+SQLALCHEMY_DATABASE_PEM = ""
+SQLALCHEMY_TRACK_MODIFICATIONS=True
+TELEGRAM_API_TOKEN = ""
+TELEGRAM_CHAT_ID = ""
+FLASK_APP=run
+FLASK_ENV=development

@@ -15,8 +15,6 @@ def create_app(config):
 
     app = Flask(__name__)
     
-    
-    
     directory = os.getcwd() +  f'./build/static'
     
     @app.route('/')
