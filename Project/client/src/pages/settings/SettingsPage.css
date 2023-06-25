@@ -1,0 +1,7 @@
+.settings-container{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    padding: 30px;
+    margin: 10px auto 30px auto;
+}

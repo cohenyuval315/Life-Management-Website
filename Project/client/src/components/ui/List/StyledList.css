@@ -1,0 +1,5 @@
+.StyledListDiv {
+    overflow-y: auto;
+    height:500px;
+    border: 1px solid black;
+}

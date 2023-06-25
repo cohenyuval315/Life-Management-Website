@@ -1,0 +1,197 @@
+{
+    "metadata":{
+        "features":["wiki","notes"],
+        "attributes":[
+        {
+            "id":1,
+            "name":"rawdata",
+            "description":"rawdata",
+            "data_type":"json",
+            "measure_units":"length",
+            "validation_rules":[]
+        },
+        {
+            "id":2,
+            "name":"instructions",
+            "description":"text",
+            "data_type":"string",
+            "measure_units":"length",
+            "validation_rules":[]
+        },
+        {
+            "id":3,
+            "name":"stars",
+            "description":"stars",
+            "data_type":"int",
+            "measure_units":"2f",
+            "validation_rules":[]
+        },
+        {
+            "id":4,
+            "name":"priority",
+            "description":"priority",
+            "data_type":"int",
+            "measure_units":"2f",
+            "validation_rules":[]
+        },
+        {
+            "id":5,
+            "name":"requirements",
+            "description":"requirements",
+            "data_type": ["json","int"],
+            "measure_units":"2f",
+            "validation_rules":[]
+        }
+        ],
+        "settings":[],
+        "states":["UNDERCONSTRUCTION"],
+        "validation_rules":[],
+        "connection_types":[]
+    }
+}
+    "templates" :[
+    {
+      "category": "routine",
+      "category_code": "in",
+      "url": "google.co.in",
+      "templates": [
+        {
+          "name": "clean",
+          "value": "clean",
+          "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+          "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+        },
+        {
+          "name": "Hindi",
+          "value": "hi",
+          "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+          "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+        }
+      ]
+    },
+
+    {
+      "category": "plan",
+      "category_code": "ae",
+      "url": "google.ae",
+      "templates": [
+        {
+          "name": "Arabic",
+          "value": "Arabic",
+          "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+          "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+        },
+        {
+          "name": "English",
+          "value": "eEnglishn",
+          "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+          "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+        }
+      ]
+    },
+
+
+    {
+        "category": "list",
+        "category_code": "ae",
+        "url": "google.ae",
+        "templates": [
+          {
+            "name": "Arabic",
+            "value": "Arabic",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          },
+          {
+            "name": "English",
+            "value": "eEnglishn",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          }
+        ]
+      },
+
+
+
+      {
+        "category": "routine_plan",
+        "category_code": "ae",
+        "url": "google.ae",
+        "templates": [
+          {
+            "name": "Arabic",
+            "value": "Arabic",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          },
+          {
+            "name": "English",
+            "value": "eEnglishn",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          }
+        ]
+      },
+
+
+
+      {
+        "category": "routine_list",
+        "category_code": "ae",
+        "url": "google.ae",
+        "templates": [
+          {
+            "name": "Arabic",
+            "value": "Arabic",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          },
+          {
+            "name": "English",
+            "value": "eEnglishn",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          }
+        ]
+      },
+
+      {
+        "category": "plan_list",
+        "category_code": "ae",
+        "url": "google.ae",
+        "templates": [
+          {
+            "name": "Arabic",
+            "value": "Arabic",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          },
+          {
+            "name": "English",
+            "value": "eEnglishn",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          }
+        ]
+      },
+      {
+        "category": "route_plan_list",
+        "category_code": "ae",
+        "url": "google.ae",
+        "templates": [
+          {
+            "name": "Arabic",
+            "value": "Arabic",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          },
+          {
+            "name": "English",
+            "value": "eEnglishn",
+            "props": [{"label":"pop", "value":"pop", "type":"string"},{"label":"papi", "value":"papi", "type":"string"}],
+            "tags": [{"label":"tag", "value":"tag"},{"label":"tag2", "value":"tag2"}]
+          }
+        ]
+      }
+
+  ]

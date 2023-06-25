@@ -1,0 +1,40 @@
+.formLayout{
+    background-color: gray;
+    color: "black";
+    width: 800px;
+    max-height: 800px;
+    min-height:600px;
+    overflow-y:auto;
+    padding:15px;
+}
+.recurringRRule{
+    display: inline-block;
+}
+.rruleform{
+    padding: 10px;
+}
+
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

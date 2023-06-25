@@ -1,0 +1,44 @@
+// import { createContext, useContext, useMemo } from "react";
+// import { useNavigate } from "react-router-dom";
+// import { useLocalStorage } from "./useLocalStorage";
+
+// const AuthContext = createContext();
+
+// export const AuthProvider = ({ children, userData }) => {
+//   const [user, setUser] = useLocalStorage("user", userData);
+//   const [isAdmin] = useState(false)
+//   const navigate = useNavigate();
+
+//   const login = async (data) => {
+//     setUser(data);
+//     navigate("/dashboard/profile", { replace: true });
+//   };
+
+//   const logout = () => {
+//     setUser(null);
+//     navigate("/", { replace: true });
+//   };
+
+//   const value = useMemo(
+//     () => ({
+//       user,
+//       login,
+//       logout
+//     }),
+//     [user]
+//   );
+
+//   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+// };
+
+// export const useAuth = () => {
+//   return useContext(AuthContext);
+// };
+
+
+import UserContext from "../context/UserProvider";
+
+export const useAuth = () => {
+    return UserContext;
+}
+

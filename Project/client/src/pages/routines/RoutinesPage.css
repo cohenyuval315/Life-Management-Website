@@ -1,0 +1,11 @@
+.routines-page-body-container{
+    margin-left: 0;
+    transition: margin-left 600ms;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    align-items: center;
+    user-select: none;
+    justify-content: flex-end;
+}

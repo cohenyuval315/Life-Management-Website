@@ -1,0 +1,34 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  padding-top: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  border-style: solid !important;
+  border-color: white !important;
+  border-width: 14px 14px 0 14px !important;
+}
+
+.segment {
+  min-height: 300px;
+}
+
+.container {
+  margin-top: 50px;
+}

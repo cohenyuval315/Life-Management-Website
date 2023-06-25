@@ -1,0 +1,36 @@
+
+#main-layout {
+  
+  display: flex;
+  min-height: 800px;
+  flex-direction: row;
+  justify-content: flex-start;
+  object-fit: fill;
+  outline: none;
+  font-size: 10px;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121317;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* .Block:local-styles {
+
+} */
+

@@ -1,0 +1,12 @@
+.eventCard{
+    background-color: aquamarine;
+}
+.header{
+    padding: 20px;
+    display: block;
+    font-size: large;
+
+}
+.eventBody{
+    font-size: medium;
+}

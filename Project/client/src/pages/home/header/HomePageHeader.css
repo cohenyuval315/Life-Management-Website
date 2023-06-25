@@ -1,0 +1,73 @@
+.space{
+    flex-grow: 1;
+}
+.homepage-header-container{
+    display: flex;
+    height: 80px;
+    background-color: #202126;
+    position: absolute;     
+    right: 0;
+}
+
+.homepage-header-items{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.homepage-header-items-container{
+    float: right;
+}   
+
+
+.homepage-header-item-list{
+    display: flex;
+}
+
+
+.homepage-header-progress-li{
+
+}
+
+.homepage-header-progress-item{
+    color: white;
+}
+
+
+.homepage-header-currency-li{
+}
+
+.homepage-header-currency{
+}
+
+.homepage-header-currency-icon{
+}
+
+.homepage-header-currency-label{
+    color: white;
+}
+
+.homepage-header-links-options{
+
+    display: flex;
+}
+
+.homepage-header-links-options-li{
+    list-style: none;    
+    list-style-type: none;
+}
+
+.homepage-header-link-option-item{
+    color: white;
+}
+
+
+
+.homepage-header-menu-li{
+
+}
+
+
+.homepage-header-menu-item{
+
+}
+

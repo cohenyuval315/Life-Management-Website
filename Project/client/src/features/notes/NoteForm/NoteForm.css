@@ -1,0 +1,46 @@
+
+.note-form-form-wrapper{
+
+}
+
+.note-form-title-div{
+}
+
+.note-form-title-input{
+}
+
+.note-form-fields-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.note-form-column{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.note-form-value-container{
+    display: flex;
+    flex-direction: row;
+}
+.note-form-textarea{
+    width: 300px;
+    height: 200px;
+}
+.note-form-textarea-wrapper{
+}
+
+.note-form-markdown-preview-wrapper{
+    margin-left: 30px;
+    /* position: absolute; */
+    border: 1px solid white;
+    height: 200px;
+    width: 300px;
+    overflow-y: auto;
+    color:black;
+    background-color: white;
+}
+.note-form-markdown-preview-wrapper  a{
+    color:blue
+
+}

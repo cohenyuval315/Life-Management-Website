@@ -1,0 +1,48 @@
+.savesContainer{
+    font-size: 17px;    
+    color: aliceblue;   
+}
+.currentSave{
+   display: flex;
+   width: 700px; 
+    max-height: 300px; 
+    overflow-y: auto;
+}
+.currentSaveLabel{
+
+}
+.currentSaveData{
+    padding: 20px;
+}
+.currentSaveButtons{
+}
+.userBackups{
+}
+
+.userBackupsLabel{
+    display: block;
+}
+
+.saveListItem{
+    border: 1px solid black;
+    padding: 10px;
+}
+.userBackupsList{
+    list-style: none;
+    display: block;
+}
+.saveItem{
+    display: block;
+
+}
+.saveItemLabel{
+    
+}
+.saveData{
+    display: block;
+    overflow-y: auto;
+    max-height: 300px;
+}
+.saveItemButtons{
+        
+}

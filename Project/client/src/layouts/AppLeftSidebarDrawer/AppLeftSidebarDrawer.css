@@ -1,0 +1,96 @@
+#appleftsidebardrawer-container {
+  position: relative;
+  z-index: 100;
+  display: block;
+  width: 200px;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+#appleftsidebardrawer-vertical-flexbox {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+#appleftsidebardrawer-header-horizontal-flex {
+  display: flex;
+  height: 70px;
+  flex-direction: row-reverse;
+}
+
+.hide {
+  display: none;
+}
+
+#appleftsidebardrawer-header-horizontal-flex :hover + #appleftsidebardrawer-header-horizontal-flex-item {
+    display: block;
+}
+
+#appleftsidebardrawer-header-horizontal-flex-item{
+  width: 50px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+
+}
+#appleftsidebardrawer-body-header {
+  display: flex;
+  height: 170px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  flex-direction: column;
+  }
+
+
+#appleftsidebardrawer-body-header-item {
+  height: 70px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+#appleftsidedrawer-children-body {
+  display: flex;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+#appleftsidebardrawer-body-wrapper  {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+#appleftsidebardrawer-body-items-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding-left: 10px;
+}
+#appleftsidebardrawer-body-list {
+  display: flex;
+  height: 500px;
+  padding-left: 0px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style-type: none;
+}
+#appleftsidebardrawer-body-list-item {
+  height: 70px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}

@@ -1,0 +1,14 @@
+.sidebar-nav-menu-item {
+  border: 1px solid #CCC;
+  margin-bottom: 20px;
+}
+.sidebar-nav-menu-item .sidebar-nav-menu-item-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: all linear 0.5s;
+}
+
+.sidebar-nav-menu-item.item-active .sidebar-nav-menu-item-body {
+  max-height: 100px;
+  transition: all linear 0.5s 0.3s;
+}

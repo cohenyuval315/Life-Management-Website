@@ -1,0 +1,24 @@
+npm install pixi.js
+npm install pixi viewport
+
+then 
+npm install pixi/core
+then bitmapresourse remove super()
+
+
+    "@pixi-essentials/cull": "^1.1.0",
+    "@pixi/core": "^7.0.4",
+    "@pixi/display": "^7.0.4",
+    "@pixi/math": "^7.0.4",
+
+
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron:serve": "concurrently -k \"cross-env BROWSER=None yarn start\" \" yarn electron:start\"",
+    "electron:build": "concurrently -k",
+    "electron:start": "wait-on tcp:3000 && electron .",
+    "serve": "webpack serve --mode development",
+    "buildwebpack": "webpack --mode production",
+    "server": "node public/getnotes.js"

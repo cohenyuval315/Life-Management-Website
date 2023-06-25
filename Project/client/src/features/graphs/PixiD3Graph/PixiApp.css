@@ -1,0 +1,23 @@
+
+.canvas-items-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-toolbar{
+  display: flex;
+  flex-direction: row;
+}
+
+#canvas-wrapper{
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid white;
+}
+
+
+.graph-tooltip{
+  position: absolute;
+}

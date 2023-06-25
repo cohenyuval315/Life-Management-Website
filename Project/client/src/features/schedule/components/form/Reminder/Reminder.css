@@ -1,0 +1,101 @@
+.reminderListContainer{
+    display: block;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.reminderLabel{
+    text-align: left;
+    font-size: 20px;
+    padding: auto;  
+}
+
+.reminderHeader{
+    padding: 10px;
+    display: flex;
+
+}
+
+.timeLeftReminderForm{
+    display: block;
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.dateTimeReminderForm{
+    display: block;
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.reminderListContent{
+    display: inline-block;
+    padding: 15px;
+}
+
+.reminderRow{
+    display: flex;
+    
+}
+
+.reminderData{
+    padding: 5px;
+    display: block;
+}
+
+.reminderRemove{
+    padding: 5px;
+    display: block;
+}
+
+.reminderItem{
+    display: inline-block;
+}
+
+.dateTimeReminderItem{
+
+}
+
+.timeLeftReminderItem{
+
+}
+
+.timeLeftReminderContainer{
+}
+.timeLeftReminderLabel{
+}
+.timeLeftTextField{
+}
+.timeLeftSelect{
+}
+
+
+
+
+.reminderContainer{
+    padding: 15px;
+    display: block;
+}
+
+.reminderLabel{
+    display: block;
+
+}
+.reminderForm{
+    display: inline-flex;
+
+}
+
+.timeLeftTextField{
+    display: flex;
+    width: 60px;
+}
+
+.timeLeftSelect{
+    display: flex;
+    width: 100px;
+}
+

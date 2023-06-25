@@ -1,0 +1,35 @@
+.routinesCollectionContainer{
+    background-color: "";
+}
+
+.routinesContainer{
+    display: inline-flex;
+}
+
+.routinesLayout{
+    display: block;  
+}
+
+.routineContent{
+    display: block;
+    padding: 15px;
+}
+
+.routineLayout{
+}
+
+.routineForm{
+}
+
+.routinesList{
+}
+.routinesSubheader{
+    padding: 20px;
+    font-size: large;
+}
+
+.routineListItems{
+}
+.routineItem{
+    color:"black"
+}

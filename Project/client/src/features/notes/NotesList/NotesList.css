@@ -1,0 +1,53 @@
+
+.notes-list-ul{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    
+
+}
+
+.note-list-item{
+    list-style-type: none;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    border: 1px solid white;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.note-on-hover{
+    background-color: gray;
+}
+
+.note-label-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-note{
+    background-color: white;
+    color:black;
+}
+
+.delete-note-button-wrapper{
+    margin-left: auto;
+}
+.delete-note-button{
+    background-color: beige;
+    margin-left: auto;
+}
+
+.note-toolbar{
+    
+    margin-left: auto;
+}
+
+.hide-note-toolbar{
+    display: none;
+}
+

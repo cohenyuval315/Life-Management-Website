@@ -1,0 +1,2 @@
+import AppRightSidebarMiniDrawer from './AppRightSidebarMiniDrawer'
+export default AppRightSidebarMiniDrawer

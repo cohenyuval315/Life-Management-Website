@@ -1,0 +1,99 @@
+{
+    "links":
+        {
+            "many_to_many":[
+
+                {
+                    "name":"entry_properties",
+                    "parent":"entry",
+                    "child":"property",
+                    "fields":{
+                        "property_value":"string"
+                    }
+                },
+                {   
+                    "name":"entry_tags",
+                    "parent":"entry",
+                    "child":"tag",
+                    "fields":{
+                        "tag_value":"string",
+                        "group_name":"string"
+                    }
+                },
+
+                {
+                    "name":"entry_edges",
+                    "parent":"entry",
+                    "child":"entry",
+                    "fields":{
+                        "parent_id":"integer",
+                        "child_id":"integer",
+                        "connection_type":"enum",
+                        "weight":"string"
+                    }
+                },
+
+                {
+                    "name":"user_settings",
+                    "parent":"user",
+                    "child":"setting",
+                    "fields":{
+                        "setting_value":"string"
+                    }
+                }    
+            ],
+            "one_to_many":[
+                {
+                    "name":"user_entries",
+                    "parent":"user",
+                    "child":"entry",
+                    "fields":{
+                    }
+                }
+          
+            ],
+            "one_to_one":[]
+        },
+    "tables":[
+        {
+            "user":{
+                "id":"int",
+                "username":"string",
+                "password":"encrypted_string",
+                "firstname":"string",
+                "lastname":"string",
+                "description":"text",
+                "date_of_birth":"date",
+                "entries":"array"
+                
+            },
+            "setting":{
+                "name":"string",
+                "description":"string"
+            },
+            "entry":{
+                "id":"integer",
+                "user_id":"integer",
+                "name":"string",
+                "description":"string",
+                "state":"enum",
+                "state_type":"enum",
+                "type":"enum"
+            },
+            "tag":{
+                "id":"integer",
+                "name":"string"
+            },
+            "property":{
+                "id":"integer",
+                "name":"string",
+                "data_type":"enum"
+            },
+
+
+
+            "category":{
+            }
+        }
+    ]
+}

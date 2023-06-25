@@ -1,0 +1,12 @@
+.itemCard{
+    display: inline-flex;
+
+}
+
+.itemKey{
+    padding: 10px;
+}
+
+.itemValue{
+    padding: 10px;
+}

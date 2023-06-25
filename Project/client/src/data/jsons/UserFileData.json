@@ -1,0 +1,687 @@
+{
+    "id":1,
+    "username":"username",
+    "password":"password",
+    "firstname":"moshe",
+    "lastname":"cohen",
+    "email":"moshe@gmail.com",
+    "date_of_birth":"2000-01-01",
+    "settings":[],
+
+    "features":[
+        {"id":9, "label":"event",  "value":"event" },
+        {"id":6, "label":"wiki",   "value":"wiki"  },
+        {"id":99, "label":"notes", "value":"notes" }
+    ],
+
+    "attributes":[
+        {
+            "id":1,
+            "name":"rawdata",
+            "description":"rawdata",
+            "data_type":"json",
+            "measure_units":"length",
+            "validation_rules":[]
+        },
+        {
+            "id":2,
+            "name":"instructions",
+            "description":"text",
+            "data_type":"string",
+            "measure_units":"length",
+            "validation_rules":[]
+        },
+        {
+            "id":3,
+            "name":"stars",
+            "description":"stars",
+            "data_type":"int",
+            "measure_units":"2f",
+            "validation_rules":[]
+        },
+        {
+            "id":4,
+            "name":"priority",
+            "description":"priority",
+            "data_type":"int",
+            "measure_units":"2f",
+            "validation_rules":[]
+        },
+        {
+            "id":5,
+            "name":"requirements",
+            "description":"requirements",
+            "data_type": "json",
+            "measure_units":"2f",
+            "validation_rules":[]
+        }
+    ],
+
+    "properties":[
+        {
+            "id":1,
+            "name":"tips",
+            "attribute":"rawdata",  
+            "value":{"tips":[{"1":"tip1"},{"2":"tip2"},{"3":"tip3"}]}
+        },
+        {
+            "id":2,
+            "name":"evaluations",
+            "attribute":"rawdata",  
+            "value":{"tips":[{"1":"eval1"},{"2":"eval2"},{"3":"eval3"}]}
+        },
+        {
+            "id":2,
+            "name":"complexity",
+            "attribute":"stars",  
+            "value":50
+        },
+        {
+            "id":2,
+            "name":"instructions",
+            "attribute":"instructions",  
+            "value":"try to do 1 than maybe 2"
+        }
+    ],
+
+    "tags":[
+        {"id":1, "label":"health",   "features":["wiki"],    "value":"health"    },
+        {"id":2, "label":"physical", "features":["wiki"],    "value":"physical"  },
+        {"id":3, "label":"regime",   "features":["wiki"],    "value":"regime"    },
+        {"id":4, "label":"core",     "features":["wiki"],    "value":"core"      }
+    ],
+
+    
+    "objects":[ 
+        {
+            "id":1,
+            "name":"objectName",
+            "description":"objectDescripion",
+            "features":[
+                {"label":"event",  "value":"event" },
+                {"label":"wiki",   "value":"wiki"  }
+            ],
+            "state":"UNDERCONSTRUCTION",
+            "tags":[
+                {"label":"health",      "value":"health"    },
+                {"label":"physical",    "value":"physical"  },
+                {"label":"regime",      "value":"regime"    },
+                {"label":"core",        "value":"core"      }
+            ],
+            "properties":[
+                {
+                    "id":1,
+                    "name":"tips",
+                    "attribute":"rawdata",  
+                    "value":{"tips":[{"1":"tip1"},{"2":"tip2"},{"3":"tip3"}]}
+                },
+                {
+                    "id":2,
+                    "name":"evaluations",
+                    "attribute":"rawdata",  
+                    "value":{"tips":[{"1":"eval1"},{"2":"eval2"},{"3":"eval3"}]}
+                },
+                {
+                    "id":2,
+                    "name":"complexity",
+                    "attribute":"stars",  
+                    "value":50
+                },
+                {
+                    "id":2,
+                    "name":"instructions",
+                    "attribute":"instructions",  
+                    "value":"try to do 1 than maybe 2"
+                }
+            ]
+        },
+
+        {
+            "id":2,
+            "name":"objectName2",
+            "description":"objectDescripion2",
+            "features":[
+                {"label":"event",  "value":"event" },
+                {"label":"wiki",   "value":"wiki"  }
+            ],
+            "state":"UNDERCONSTRUCTION",
+            "tags":[
+                {"label":"health",      "value":"health"    },
+                {"label":"physical",    "value":"physical"  },
+                {"label":"regime",      "value":"regime"    }
+            ],
+            "properties":[
+                {
+                    "id":1,
+                    "name":"paptips",
+                    "attribute":"rawdata",  
+                    "value":{"hey":["beyong"]}
+                },
+                {
+                    "id":2,
+                    "name":"evaluations",
+                    "attribute":"rawdata",  
+                    "value":{"tips":[{"1":"eval1"},{"2":"eval2"},{"3":"eval3"}]}
+                },
+                {
+                    "id":2,
+                    "name":"complexity",
+                    "attribute":"stars",  
+                    "value":30
+                },
+                {
+                    "id":2,
+                    "name":"instructions",
+                    "attribute":"instructions",  
+                    "value":"take it all and mix it up with eggs"
+                }
+            ]
+        },
+
+        {
+            "id":3,
+            "name":"objectName3",
+            "description":"objectDescripion3",
+            "features":[
+                {"label":"wiki",   "value":"wiki"  }
+            ],
+            "state":"UNDERCONSTRUCTION",
+            "tags":[
+                {"label":"core",        "value":"core"      }
+            ],
+            "properties":[
+                {
+                    "id":1,
+                    "name":"checks",
+                    "attribute":"rawdata",  
+                    "value":{"checks":[{"1":"numbers"},{"2":"check"},{"3":"fast formula"}]}
+                },
+                {
+                    "id":2,
+                    "name":"evaluations",
+                    "attribute":"rawdata",  
+                    "value":{"tips":[{"1":"eval1"},{"2":"eval2"},{"3":"eval3"}]}
+                },
+                {
+                    "id":2,
+                    "name":"checks",
+                    "attribute":"priority",  
+                    "value":50
+                },
+                {
+                    "id":2,
+                    "name":"todo_before",
+                    "attribute":"requirements",  
+                    "value":{"must":[10],"helps":[11,13],"troubleshooting":[12]}
+                }
+            ]
+        },
+
+        {
+            "id":4,
+            "name":"objectName4",
+            "description":"objectDescripion4",
+            "features":[
+                {"label":"event",  "value":"event" },
+                {"label":"wiki",   "value":"wiki"  }
+            ],
+            "state":"UNDERCONSTRUCTION",
+            "tags":[
+                {"label":"health",      "value":"health"    },
+                {"label":"mental",    "value":"mental"  },
+                {"label":"core",        "value":"core"      }
+            ],
+            "properties":[
+                {
+                    "id":2,
+                    "name":"listOfKababs",
+                    "attribute":"rawdata",  
+                    "value":{"kebab":[{"1":"kabab1"},{"2":"kabab2"},{"3":"kabab3"}]}
+                }
+            ]
+        }
+    ],
+    
+    "categoriesOptions":[
+        {
+            "master":[
+                { "id": 1, "name": "health", "parentId": 0 , "data":[1,2,3,4]},
+                { "id": 2, "name": "money", "parentId": 0 , "data":[1,2,4]},
+                { "id": 3, "name": "etc", "parentId": 0 , "data":[]},
+                { "id": 4, "name": "test", "parentId": 1 , "data":[1,2,3]}
+            ]
+        },
+        {
+            "ambivalent":[
+
+                { "id": 5, "name": "ithink", "parentId": 0 , "data":[1]},
+                { "id": 6, "name": "its", "parentId": 0 , "data":[1,2]},
+                { "id": 7, "name": "alright", "parentId": 0 , "data":[1,2,3]},
+                { "id": 8, "name": "maybe", "parentId": 1 , "data":[]}
+
+            ]
+        },
+        {
+            "later":[
+
+                { "id": 9, "name": "later", "parentId": 0 , "data":[1]},
+                { "id": 10, "name": "this", "parentId": 0 , "data":[2]},
+                { "id": 11, "name": "maybe", "parentId": 0 , "data":[3]},
+                { "id": 12, "name": "idk", "parentId": 1 , "data":[4]}
+            ]
+        }
+    ],
+
+
+    "entry_edges":[
+        {
+            "entry_child_ID":8,
+            "entry_parent_ID":1,
+            "weight":"",
+            "connection_type":"item"
+        },
+        {
+            "entry_child_ID":9,
+            "entry_parent_ID":1,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+        {
+            "entry_child_ID":10,
+            "entry_parent_ID":1,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+
+        {
+            "entry_child_ID":11,
+            "entry_parent_ID":2,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+        {
+            "entry_child_ID":12,
+            "entry_parent_ID":2,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+        {
+            "entry_child_ID":13,
+            "entry_parent_ID":2,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+        {
+            "entry_child_ID":14,
+            "entry_parent_ID":2,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+        {
+            "entry_child_ID":15,
+            "entry_parent_ID":3,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+        {
+            "entry_child_ID":16,
+            "entry_parent_ID":3,
+            "weight":"",
+            "connection_type":"regime_item"
+        },
+
+
+        {
+            "entry_child_ID":11,
+            "entry_parent_ID":4,
+            "weight":"",
+            "connection_type":"pool_item"
+        },
+        {
+            "entry_child_ID":12,
+            "entry_parent_ID":4,
+            "weight":"",
+            "connection_type":"pool_item"
+        },
+        {
+            "entry_child_ID":13,
+            "entry_parent_ID":4,
+            "weight":"",
+            "connection_type":"pool_item"
+        },
+        {
+            "entry_child_ID":14,
+            "entry_parent_ID":4,
+            "weight":"",
+            "connection_type":"pool_item"
+        },
+
+        {
+            "entry_child_ID":8,
+            "entry_parent_ID":5,
+            "weight":"",
+            "connection_type":"item"
+        },
+        {
+            "entry_child_ID":9,
+            "entry_parent_ID":5,
+            "weight":"",
+            "connection_type":"item"
+        },
+        {
+            "entry_child_ID":10,
+            "entry_parent_ID":6,
+            "weight":"",
+            "connection_type":"item"
+        },
+
+        {
+            "entry_child_ID":15,
+            "entry_parent_ID":6,
+            "weight":"",
+            "connection_type":"pool_item"
+        },
+        {
+            "entry_child_ID":16,
+            "entry_parent_ID":6,
+            "weight":"",
+            "connection_type":"pool_item"
+        }
+    ],
+
+    
+    "categoriesTest": [
+    {
+    "name": "Asia",
+    "id": "01",
+    "category": "Continent",
+    "children": [
+        {
+            "name": "India",
+            "id": "1",
+            "category": "Asia",
+            "children": [
+                {
+                    "name": "Delhi",
+                    "id": "1001",
+                    "category": "India",
+                    "children": []
+                },
+                {
+                    "name": "Kashmir",
+                    "id": "1002",
+                    "category": "India",
+                    "children": []
+                },
+                {
+                    "name": "Goa",
+                    "id": "1003",
+                    "category": "India",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "China",
+            "id": "2",
+            "category": "Asia",
+            "children": [
+                {
+                    "name": "California",
+                    "id": "3001",
+                    "category": "USA",
+                    "children": []
+                },
+                {
+                    "name": "Zhejiang",
+                    "id": "2001",
+                    "category": "China",
+                    "children": []
+                },
+                {
+                    "name": "Hunan",
+                    "id": "2002",
+                    "category": "China",
+                    "children": []
+                },
+                {
+                    "name": "Shandong",
+                    "id": "2003",
+                    "category": "China",
+                    "children": []
+                }
+            ]
+        }
+    ]
+    },
+    {
+        "name": "North America",
+        "id": "02",
+        "category": "Continent",
+        "children": [
+            {
+                "name": "USA",
+                "id": "3",
+                "category": "North America",
+                "children": [
+                    {
+                        "name": "California",
+                        "id": "3001",
+                        "category": "USA",
+                        "children": []
+                    },
+                    {
+                        "name": "New York",
+                        "id": "3002",
+                        "category": "USA",
+                        "children": []
+                    },
+                    {
+                        "name": "Florida",
+                        "id": "3003",
+                        "category": "USA",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Canada",
+                "id": "4",
+                "category": "North America",
+                "children": [
+                    {
+                        "name": "Ontario",
+                        "id": "4001",
+                        "category": "Canada",
+                        "children": []
+                    },
+                    {
+                        "name": "Alberta",
+                        "id": "4002",
+                        "category": "Canada",
+                        "children": []
+                    },
+                    {
+                        "name": "Manitoba",
+                        "id": "4003",
+                        "category": "Canada",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Europe",
+        "id": "03",
+        "category": "Continent",
+        "children": [
+            {
+                "name": "Germany",
+                "id": "5",
+                "category": "Europe",
+                "children": [
+                    {
+                        "name": "Berlin",
+                        "id": "5001",
+                        "category": "Germany",
+                        "children": []
+                    },
+                    {
+                        "name": "Bavaria",
+                        "id": "5002",
+                        "category": "Germany",
+                        "children": []
+                    },
+                    {
+                        "name": "Hesse",
+                        "id": "5003",
+                        "category": "Germany",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "France",
+                "id": "6",
+                "category": "Europe",
+                "children": [
+                    {
+                        "name": "Paris",
+                        "id": "6001",
+                        "category": "France",
+                        "children": []
+                    },
+                    {
+                        "name": "Lyon",
+                        "id": "6002",
+                        "category": "France",
+                        "children": []
+                    },
+                    {
+                        "name": "Marseille",
+                        "id": "6003",
+                        "category": "France",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Australia",
+        "id": "04",
+        "category": "Continent",
+        "children": [
+            {
+                "name": "Australia",
+                "id": "7",
+                "category": "Australia",
+                "children": [
+                    {
+                        "name": "Sydney",
+                        "id": "7001",
+                        "category": "Australia",
+                        "children": []
+                    },
+                    {
+                        "name": "Melbourne",
+                        "id": "7002",
+                        "category": "Australia",
+                        "children": []
+                    },
+                    {
+                        "name": "Brisbane",
+                        "id": "7003",
+                        "category": "Australia",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "New Zealand",
+                "id": "8",
+                "category": "Australia",
+                "children": [
+                    {
+                        "name": "Milford Sound",
+                        "id": "8001",
+                        "category": "New Zealand",
+                        "children": []
+                    },
+                    {
+                        "name": "Tongariro National Park",
+                        "id": "8002",
+                        "category": "New Zealand",
+                        "children": []
+                    },
+                    {
+                        "name": "Fiordland National Park",
+                        "id": "8003",
+                        "category": "New Zealand",
+
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Africa",
+        "id": "05",
+        "category": "Continent",
+        "children": [
+            {
+                "name": "Morocco",
+                "id": "9",
+                "category": "Africa",
+                "children": [
+                    {
+                        "name": "Rabat",
+                        "id": "9001",
+                        "category": "Morocco",
+                        "children": []
+                    },
+                    {
+                        "name": "Toubkal",
+                        "id": "9002",
+                        "category": "Morocco",
+                        "children": []
+                    },
+                    {
+                        "name": "Todgha Gorge",
+                        "id": "9003",
+                        "category": "Morocco",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "South Africa",
+                "id": "10",
+                "category": "Africa",
+                "children": [
+                    {
+                        "name": "Cape Town",
+                        "id": "10001",
+                        "category": "South Africa",
+                        "children": []
+                    },
+                    {
+                        "name": "Pretoria",
+                        "id": "10002",
+                        "category": "South Africa",
+                        "children": []
+                    },
+                    {
+                        "name": "Bloemfontein",
+                        "id": "10003",
+                        "category": "South Africa",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+    ]
+}
