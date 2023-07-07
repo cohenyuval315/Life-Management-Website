@@ -30,7 +30,6 @@ def create_app(config):
     
     
     
-    
     app.config.from_object(config) 
     CORS(app)
     init_db()

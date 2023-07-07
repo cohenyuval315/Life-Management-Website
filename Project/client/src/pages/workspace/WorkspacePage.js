@@ -33,8 +33,6 @@ const WorkspacePage = () => {
   return (
     <>
 
-
-
             <AppTopSidebarDrawer/>
             <AppLeftSidebarDrawer >
                   

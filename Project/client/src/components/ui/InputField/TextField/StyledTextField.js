@@ -1,4 +1,4 @@
-import { TextField } from '@material-ui/core'
+import { TextField } from '@mui/material'
 import React from 'react'
 import './StyledTextField.css'
 
@@ -17,7 +17,7 @@ const StyledTextField = ({label,value,handleChange, ...props}) => {
       </div>
       )}
       <div className='fieldValue'>
-        <TextField value={value} onChange={handleChange} {...props}  /> 
+        <TextField  color="secondary" value={value} onChange={handleChange} {...props}   inputProps={{ style: { fontFamily: 'nunito', color: 'white' } }} /> 
       </div>
     </div>
   )

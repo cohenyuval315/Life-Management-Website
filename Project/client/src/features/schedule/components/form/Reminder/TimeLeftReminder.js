@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import { validateInteger } from '../../../../../utils/helpers'
 import StyledSelect from '../../../../../components/ui/Select/StyledSelect'
-import StyledTextField from '../../../../../components/ui/TextField/StyledTextField'
+import StyledTextField from './../../../../../components/ui/InputField/TextField/StyledTextField'
 import { v4 as uuidv4 } from 'uuid'
 import './Reminder.css'
 

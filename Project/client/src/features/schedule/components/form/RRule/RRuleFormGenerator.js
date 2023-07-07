@@ -5,7 +5,7 @@ import React,{useState,useEffect} from 'react'
 import RRule from 'rrule';
 import 'react-rrule-generator/build/styles.css' // react-rrule-generator's custom CSS
 import StyledButton from '../../../../../components/ui/Button/StyledButton';
-import StyledDatePicker from '../../../../../components/ui/DatePicker/StyledDatePicker';
+import StyledDatePicker from '../../../../../components/ui/Time/DatePicker/StyledDatePicker';
 
 const RRuleFormGenerator = ({start,handleChange,value}) => {
     const [state,setState] = useState({"rrule":''})

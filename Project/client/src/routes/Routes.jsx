@@ -13,7 +13,6 @@ AdminPage,
  GraphsPage,
  LivePage,
  MasterListPage,
- MealsPage,
  ObjectivesPage,
  PlannerPage,
  RecurringPage,
@@ -49,7 +48,6 @@ const GamePageElement = GamePage
 const GraphsPageElement = GraphsPage
 const LivePageElement = LivePage
 const MasterListPageElement = MasterListPage
-const MealsPageElement = MealsPage
 const ObjectivesPageElement = ObjectivesPage
 const PlannerPageElement =PlannerPage
 const RecurringPageElement = RecurringPage
@@ -79,8 +77,7 @@ const AppRoutes = () => {
 
   return (
     <Routes>
-          {/* {(user !== null && user !== undefined && user !== false)?( */}
-          {(true)?(
+          {user == null || (user !== null && user !== undefined && user !== false)?(
           <Route path='/'  element={<LayoutElement/>}>
                 
                 <Route  path={SLUGS.home.slug} element={ <HomePageElement/>} />
@@ -91,7 +88,7 @@ const AppRoutes = () => {
                 <Route  path={SLUGS.objectives.slug} element={ <ObjectivesPageElement/>} />
                 <Route  path={SLUGS.routines.slug} element={ <RoutinesPageElement/>} />
                 <Route  path={SLUGS.calendar.slug} element={ <CalendarPageElement/>} />
-
+                
 
 
                 <Route  path={SLUGS.live.slug} element={ <LivePageElement/>} />
@@ -99,7 +96,6 @@ const AppRoutes = () => {
                 <Route  path={SLUGS.confidential.slug} element={ <ConfidentalPageElement/>} />
                 <Route  path={SLUGS.dashboard.slug} element={ <DashboardPageElement/>} />
                 <Route  path={SLUGS.game.slug} element={ <GamePageElement/>} />
-                <Route  path={SLUGS.meals.slug} element={ <MealsPageElement/>} />
                 <Route  path={SLUGS.planner.slug} element={ <PlannerPageElement/>} />
                 <Route  path={SLUGS.reccuring.slug} element={ <RecurringPageElement/>} />
                 <Route  path={SLUGS.saveditems.slug} element={ <SavedItemsPageElement/>} />

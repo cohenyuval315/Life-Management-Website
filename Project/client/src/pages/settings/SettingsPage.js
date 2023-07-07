@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './SettingsPage.css'
+import Wiki from './../../features/wiki/components/Wiki/index'
 
 const SettingsPage = () => {
   return (
     <div className='settings-container'>
-        settete
+        <Wiki/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronRight, faMagnifyingGlass, faAtom, faBars, faTimes, faChartColumn, faPen, faCalendar, faBookOpen, faChessBoard, faHome, faList, faPersonRunning, faDice,faGear,faGears } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown,faFolder,faFolderOpen,faFile, faChevronRight,faAdd, faMagnifyingGlass, faAtom, faBars, faTimes, faChartColumn, faPen, faCalendar, faBookOpen, faChessBoard, faHome, faList, faPersonRunning, faDice,faGear,faGears, faSave, faCircle, faClose } from '@fortawesome/free-solid-svg-icons';
 
 const GetIcon = (icon) => {
   return (
@@ -27,6 +27,13 @@ const Icons = {
   Gear: GetIcon(faGear),
   Gears: GetIcon(faGears),
   Dice: GetIcon(faDice),
+  Add: GetIcon(faAdd),
+  Save: GetIcon(faSave),
+  faCircle:GetIcon(faCircle),
+  Close:GetIcon(faClose),
+  Folder:GetIcon(faFolder),
+  FolderOpen:GetIcon(faFolderOpen),
+  Description:GetIcon(faFile),
 };
 
 export default Icons;

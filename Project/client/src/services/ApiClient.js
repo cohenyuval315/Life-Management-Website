@@ -40,6 +40,7 @@ export default class ApiClient {
       response = await fetch(this.base_url + options.url + query, {
         method: options.method,
         headers: {
+          'Access-Control-Allow-Origin':'http://127.0.0.1:3000',
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + localStorage.getItem('access_token'),
           ...options.headers,

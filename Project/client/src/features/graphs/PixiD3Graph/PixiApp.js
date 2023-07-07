@@ -50,7 +50,7 @@ function PixiApp() {
   return (
       <div className="canvas-items-wrapper">
           <div className="canvas-toolbar">
-            <button onClick={()=>console.log()}>reset</button>
+            <button onClick={()=>console.log()} style={{color:"black"}}>reset</button>
             <input type='search'/>
             <input type='checkbox' />show arrows
             <input type='checkbox' />show hidden

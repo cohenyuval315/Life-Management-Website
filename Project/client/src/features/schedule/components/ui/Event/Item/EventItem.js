@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import StyledButton from '../../../../../../components/ui/Button/StyledButton'
 import { deleteUserEvent } from '../../../../../../services/api'
 import EventForm from '../../../form/Event/index'
-import DataModal from '../../../../../../components/ui/PopupModal/StyledPopupModal'
+import DataModal from './../../../../../../components/ui/Modal/StyledModal'
+
 import EventCard from '../Card'
 
 const EventItem = (props) => {

@@ -44,6 +44,7 @@ class MongoAPI(object):
         self.client = MongoClient(f"{config.MONGO_API_URL}") 
         self.db = self.client[f"{config.MONGO_DATABASE_NAME}"]
 
+
     def user_find_and_replace(self,identity,collection_name,data, filters=[],upsert=False):
         user_filters = [{"username": identity}]
         user_filters.extend(filters)

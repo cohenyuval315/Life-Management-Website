@@ -77,20 +77,21 @@ const Login = () => {
 
     return(
         <Body>
-        <div >
+        <div style={{position:"absolute",color:"black", backgroundColor:"white",border: "3px solid green", width:"300px",textAlign:"center",marginLeft:"auto",marginRight:"auto",left:"0",right:"0"}}>
             <div >
                 <div align='center'>
                      <div style={avatarStyle}>icon</div>
                     <h2>Sign In</h2>
                 </div>
 
-                <InputField
+                username : <InputField 
                      name="username" label="Username or email address"
                     error={formErrors.username} fieldRef={usernameField} 
                     fullWidth 
                     required
                     />
-
+                <br/>
+                password : 
                 <InputField
                    name="password" label="Password" type="password"
                    error={formErrors.password} fieldRef={passwordField} fullWidth required/>
@@ -106,15 +107,15 @@ const Login = () => {
                     }
                     label="Remember me"
                  />
-
-                <button onClick={(e)=>onSubmit(e)}>Sign in</button>
-                <div >
-                     <Link href="/forgot-password" >
+                <br/>
+                <button style={{color:"black",backgroundColor:"gray"}} onClick={(e)=>onSubmit(e)}>Sign in</button>
+                <div>
+                     <Link style={{color:"blue"}} href="/forgot-password" >
                         Forgot password ?
                 </Link>
                 </div>
                 <div > Do you have an account ?
-                     <Link href="/signup" >
+                     <Link style={{color:"blue"}} href="/signup" >
                         Sign Up 
                 </Link>
                 </div>

@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import StyledTimePicker from '../TimePicker/StyledTimePicker'
-import StyledDatePicker from '../../DatePicker/StyledDatePicker'
+import StyledDatePicker from '../DatePicker/StyledDatePicker'
 import './DateTimePicker.css'
 import moment from 'moment';
 

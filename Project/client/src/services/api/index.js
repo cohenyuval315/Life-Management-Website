@@ -45,9 +45,9 @@ export function apiRequest(isAuthRequired,url,method,isBody,body){
                     // 'Authorization':`Bearer ${JSON.parse(token).access_token}`,
             },
         }
-        if(isAuthRequired){
-            requestOptions.headers.Authorization = `Bearer ${JSON.parse(token).access_token}`
-        }
+        // if(isAuthRequired){
+        //     requestOptions.headers.Authorization = `Bearer ${JSON.parse(token).access_token}`
+        // }
         if (isBody){
             requestOptions.body = JSON.stringify(body)
         }

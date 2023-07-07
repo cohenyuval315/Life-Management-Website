@@ -1,5 +1,5 @@
 import React from 'react'
-import StyledPopupModal from '../../../../../../../components/ui/PopupModal/StyledPopupModal'
+import StyledPopupModal from '../../../../../../../components/ui/Modal/PopupModal/StyledPopupModal'
 import CalendarForm from '../../../..//form/Calendar/index';
 import EventForm from '../../../../form/Event/index'
 import EventDetails from '../../../../ui/Event/Detail/index'

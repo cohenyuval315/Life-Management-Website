@@ -419,12 +419,12 @@ export default function MyCalendar(props) {
     }
   return (
     <div>
-      <div>
-        <div className='screen left side'>
+      <div id='calendar-feature-container' >
+        <div className='screen left side' id='left-side-calendar'>
             <CalendarModals {...props} {...modalsExtraProps}/> 
             <CalendarSideBar {...props}/>
         </div>
-        <div className='screen right side'  id='right'>
+        <div className='screen right side'  id='right-side-calendar'>
             <CalendarMenuBar {...props} {...menuExtraProps} /> 
 
             <div className='calendar-container'>

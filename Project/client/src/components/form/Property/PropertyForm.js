@@ -2,11 +2,11 @@ import React,{useState,useEffect} from 'react'
 import { isArray, isObject, toLabelValueItemJson, validateInteger } from '../../../utils/helpers'
 import StyledButton from '../../ui/Button/StyledButton'
 import StyledSelect from '../../ui/Select/StyledSelect'
-import StyledTextField from '../../ui/TextField/StyledTextField'
+import StyledTextField from '../../ui/InputField/TextField/StyledTextField'
 import ReactJson from 'react-json-view'
 import { createUserProperty, deleteUserProperty, getMetaData, getUserProperties,updateUserProperty } from '../../../services/api/index'
 import './PropertyForm.css'
-import StyledDateTimePicker from '../../ui/DateTimePicker/StyledDateTimePicker'
+import StyledDateTimePicker from '../../ui/Time/DateTimePicker/StyledDateTimePicker'
 
 const PropertyForm = () => {
 

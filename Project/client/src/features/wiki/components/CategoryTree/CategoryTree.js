@@ -1,12 +1,12 @@
 import React, { useState,useEffect } from 'react'
-import DataTree from '../../../../components/ui/DataTree/DataTree'
+import DataTree from '../../../../components/ui/Tree/DataTree/DataTree'
 import StyledTabs from '../../../../components/ui/Tabs/StyledTabs'
-import StyledTabPanel from '../../../../components/ui/TabPanel/StyledTabPanel'
+import StyledTabPanel from '../../../../components/ui/Tabs/TabPanel/StyledTabPanel'
 import {createUserCategory, deleteUserCategory, getUserCategoriesByFeature,getUserCategoriesByFeatureGroup,getUserCategoriesGroupsByFeature} from '../../../../services/api/index'
 import './CategoryTree.css'
 import {toLabelValueItemJson} from '../../../../utils/helpers';
 import StyledButton from '../../../../components/ui/Button/StyledButton'
-import StyledTextField from '../../../../components/ui/TextField/StyledTextField'
+import StyledTextField from '../../../../components/ui/InputField/TextField/StyledTextField'
 
 const forbiddenNames = ["wiki","scheduler","notes","console","settings","group","graph","flow"]
 

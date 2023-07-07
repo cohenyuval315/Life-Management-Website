@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import StyledDateTimePicker from '../../../../../components/ui/DateTimePicker/StyledDateTimePicker'
+import StyledDateTimePicker from '../../../../../components/ui/Time/DateTimePicker/StyledDateTimePicker'
 import { v4 as uuidv4 } from 'uuid'
 import moment from 'moment'
 import './Reminder.css'

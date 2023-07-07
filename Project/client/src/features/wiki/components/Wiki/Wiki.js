@@ -1,14 +1,14 @@
 import React,{useState,useEffect} from 'react'
 
-import { Button, List, ListItem, Tab, Tabs, TextField } from '@mui/material';
+import { List, ListItem } from '@mui/material';
 
-import StyledTextField from '../../../../components/ui/TextField/StyledTextField';
+import StyledTextField from '../../../../components/ui/InputField/TextField/StyledTextField';
 import StyledButton from '../../../../components/ui/Button/StyledButton'
 import StyledTabs from '../../../../components/ui/Tabs/StyledTabs'
-import StyledTabPanel from '../../../../components/ui/TabPanel/StyledTabPanel'
+import StyledTabPanel from '../../../../components/ui/Tabs/TabPanel/StyledTabPanel'
 import StyledSelect from '../../../../components/ui/Select/StyledSelect'
 
-import { ClassicObject } from '../../../../components/Object/ObjectLayout/index';
+import  ClassicObject from '../../../../components/form/Object/ObjectForm';
 
 
 
@@ -16,7 +16,7 @@ import {getUserCategoriesByFeature,getUserCategoriesGroupsByFeature,getUserObjec
 import {createUserCategory,deleteUserCategory,updateUserCategory} from '../../../../services/api/index';
 import './Wiki.css'
 
-import DataTree from '../../../../components/ui/DataTree/DataTree';
+import DataTree from '../../../../components/ui/Tree/DataTree/DataTree';
 import { toLabelValueItemJson } from '../../../../utils/helpers';
 
 const forbiddenNames = ["wiki","scheduler","notes","console","settings","group","graph","flow"]
@@ -214,9 +214,9 @@ const Wiki = () => {
                     <DataTree treeData={getCategoriesByGroup()} selectedItem={selectedCategory} handleSetSelectedItem={handleSetSelectedCategoryOnChange} isEdit={isEdit} handleAddOnClick={handleAddOnClick} handleRemoveOnClick={handleRemoveOnClick} />
                 </StyledTabPanel>
                 {(isEdit === true && (
-                <div>
-                <StyledTextField label={"delete or create category"} placeholder={"new category"} value={categoryName}  handleChange={handleCategoryNameOnChange}/>
-                <StyledTextField value={groupName} handleChange={handleGroupNameOnChange} placeholder={"group"} />
+                <div >
+                <StyledTextField  label={"delete or create category"} placeholder={"new category"} value={categoryName}  handleChange={handleCategoryNameOnChange}/>
+                <StyledTextField  value={groupName} handleChange={handleGroupNameOnChange} placeholder={"group"} />
                 <StyledButton name={"add group"} handleOnClick={handleAddGroupOnClick}/>
                 <StyledButton name={"add parent category"} handleOnClick={(e)=>handleAddOnClick(0)}/>
                 </div>))}

@@ -38,10 +38,6 @@ const Flows = () => {
   return (
     <div>
         <div>
-
-        </div>
-
-        <div>
             
         </div>
     </div>

@@ -5,7 +5,7 @@ import { getUserTags,getUserCategories,createUserObject,updateUserObject,getUser
 import {v4 as uuidv4} from 'uuid';
 import {toLabelValueItemJson, isExistItemInLabelValueItemArr} from '../../../utils/helpers'
 import StyledSelect from '../../ui/Select/StyledSelect'
-import StyledTextField from "../../ui/TextField/StyledTextField";
+import StyledTextField from "../../ui/InputField/TextField/StyledTextField";
 import StyledButton from "../../ui/Button/StyledButton";
 import './ObjectForm.css'
 import PropertyForm from "../Property/index";

@@ -110,32 +110,34 @@ const SignUpPage = () => {
   };
 
   return (
-    <Body>
+    <Body >
+      <div style={{color:"black",backgroundColor:"white"}}>
       <h1>Register</h1>
       <form>
-        <InputField
+        username :<InputField
           name="username" label="Username"
           error={formErrors.username} fieldRef={usernameField} />
-        <InputField
+        email <InputField
           name="email" label="Email address"
           error={formErrors.email} fieldRef={emailField} />
-        <InputField
+        firstName<InputField
           name="firstName" label="first name"
           error={formErrors.firstName} fieldRef={firstNameField} />
-        <InputField
+        lastName<InputField
           name="lastName" label="last name"
           error={formErrors.lastName} fieldRef={lastNameField} />
         date of birth :<InputField
           name="dateOfBirth" type={"date"}
           error={formErrors.dateOfBirth} fieldRef={dateOfBirthField} defaultValue={"2000-01-01"}  />
-        <InputField
+        password<InputField
           name="password" label="Password" type="password"
           error={formErrors.password} fieldRef={passwordField} />
-        <InputField
+        password check<InputField
           name="password2" label="Password again" type="password"
           error={formErrors.password2} fieldRef={password2Field} />
         <button onClick={onSubmit}>Register</button>
       </form>
+      </div>
     </Body>
   );
 

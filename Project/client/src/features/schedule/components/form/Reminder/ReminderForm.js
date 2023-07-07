@@ -4,7 +4,8 @@ import { v4 as uuidv4 } from 'uuid'
 import StyledButton from '../../../../../components/ui/Button/StyledButton'
 import DateTimeReminder from './DateTimeReminder'
 import TimeLeftReminder from './TimeLeftReminder'
-import AddIcon from "@material-ui/icons/Add";
+import { Icons } from '../../../../../assets'
+
 import './Reminder.css'
 import { createUserReminder } from '../../../../../services/api'
 
@@ -110,7 +111,7 @@ const ReminderForm = ({onChange,value}) => {
             {reminders.map((reminder)=>{
                 return (
                     <div className='reminderRow'>
-                        <AddIcon/>
+                        {Icons.Add}
                         <div className='reminderData'>
                             {(reminder.timeType !== undefined && reminder.timeType !== null) && (<TimeLeftReminderItem reminder={reminder}/>)}
                             {(reminder.dateTime !== undefined && reminder.dateTime !== null) && (<DateTimeReminderItem reminder={reminder}/>)}

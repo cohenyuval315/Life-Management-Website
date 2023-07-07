@@ -1,11 +1,9 @@
 import classnames from "classnames";
-import Folder from "@material-ui/icons/Folder";
-import DescriptionIcon from "@material-ui/icons/Description";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import FolderOpenIcon from "@material-ui/icons/FolderOpen";
+import {Icons} from "../../../../assets";
+
 import React,{ useState } from "react";
 import './DataRow.css';
-import StyledButton from "../Button/StyledButton";
+import StyledButton from "../../Button/StyledButton";
 
 
 export default function DataRow({isEdit,item, level, children ,selectedItem,handleSetSelectedItem,handleRemoveOnClick,handleAddOnClick }) {
@@ -20,20 +18,23 @@ export default function DataRow({isEdit,item, level, children ,selectedItem,hand
   return (
     <div key={`section-${item.id}`}>
 
+
         <div className="rowContainer">
         <div className={classnames("row", `level-${level}`)} onClick={handleCollapseOnClick}>
 
             {!item.hasChildren ? null : (
-                <ChevronRightIcon className={classnames("chevron", {"rotated": !isCollapsed})}/>
+
+                // <ChevronRightIcon className={classnames("chevron", {"rotated": !isCollapsed})}/>
+                <Icons.ChevronRight className={classnames("chevron", {"rotated": !isCollapsed})}/>
             )}
             
             {item.hasChildren ?( isCollapsed ? (
-                <Folder className={"folder"}/>
+                <Icons.Folder className={"folder"}/>
                 ) : (
-                <FolderOpenIcon className={"folderOpen"} />
+                <Icons.FolderOpen className={"folderOpen"} />
                 )
             ) : (
-                <DescriptionIcon className={"file"} />
+                <Icons.Description className={"file"} />
             )}
 
             <span style={(selectedItem&&selectedItem.id===item.id)?{color:"red"}:{color:"white"}}>{item.name}</span>

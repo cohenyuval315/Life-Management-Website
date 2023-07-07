@@ -4,7 +4,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import './TimePicker.css'
-import StyledTextField from '../TextField/StyledTextField';
+import StyledTextField from '../../InputField/TextField/StyledTextField';
 
 
 const StyledTimePicker = ({value,onChange}) => {

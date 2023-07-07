@@ -8,9 +8,9 @@ import FlashProvider from "./context/FlashProvider";
 import { ThemeProvider } from "./context/ThemeContext";
 import LoadingComponent from './routes/LoadingComponent'
 import "./styles/styles.css";
-// import '@toast-ui/calendar/toastui-calendar.css';
-// import 'tui-date-picker/dist/tui-date-picker.min.css';
-// import 'tui-time-picker/dist/tui-time-picker.min.css';
+import '@toast-ui/calendar/toastui-calendar.css';
+import 'tui-date-picker/dist/tui-date-picker.min.css';
+import 'tui-time-picker/dist/tui-time-picker.min.css';
 import {WorkerBuilder} from './worker/worker-builder';
 import Worker from './worker/fibo.worker';
 
@@ -34,7 +34,6 @@ const AppWorker = () => {
 const App = () => {
     return (
       <>
-        <AppWorker/>
         <Suspense fallback={<LoadingComponent loading />}>
           <Router>
               <ApiProvider>

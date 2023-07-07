@@ -1,6 +1,6 @@
 import { Container, Graphics, InteractionEvent, Sprite ,settings, Circle, Texture, BitmapText,SCALE_MODES, Text, Point, TARGETS} from "pixi.js";
 import { IScene, PixiManager } from "../Pixi/PixiManager";
-// import { DUMMY_DATA as graph } from './DummyData'
+
 import {runD3Layout} from '../D3/D3Layout'
 import * as d3 from 'd3';
 import { GlobalInput } from "../D3/GlobalInput";
@@ -8,13 +8,7 @@ import { Cull} from '@pixi-essentials/cull'
 import forceInABox from './ForceInABox'
 import { node } from "prop-types";
 
-// color by depth
-// then color by group / tags
-// cluster by 
-//
-
-// INSTEAD OF ID , DIFFRENT NAMES ACCOYNM 
- const DummyData={
+const DummyData={
   "nodes": [
     {
       "id": 1,
@@ -176,29 +170,6 @@ export class InteractiveScene extends Container implements IScene {
     constructor() {
         super();
 
-
-        this.clampy = Sprite.from("./clampy.png");
-
-        this.clampy.anchor.set(0.5);
-        this.clampy.height = 10;
-        this.clampy.width = 10;
-        this.clampy.x = PixiManager.width / 2;
-        this.clampy.y = PixiManager.height / 2;
-        this.addChild(this.clampy);
-
-        this.clampyVelocity = 5;
-        // this.clampy
-        // .on('click',this.onClick,this)   
-        // .on('pointerdown', this.onDragStart,this)
-        // .on('pointerup',this.onDragEnd,this)
-        // .on('pointerupoutside', this.onDragEnd,this)
-        // .on('pointermove', this.onDragMove,this)
-        // .on('tap',this.onTap,this)
-        // .on('mouseover',this.onMouseOver,this)
-        // .on('mouseout',this.onMouseOut,this)
-
-        this.clampy.interactive = true;
-
         const color = (function() {
             let scale = d3.scaleOrdinal(d3.schemeCategory10);
             return (num) => parseInt(scale(num).slice(1), 16);
@@ -268,22 +239,6 @@ export class InteractiveScene extends Container implements IScene {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       const testNodes = graph.nodes
       const linksitems = new Graphics();
 
@@ -301,14 +256,14 @@ export class InteractiveScene extends Container implements IScene {
             .velocityDecay(0.8);
     
 
-    const template = "force";
+      const template = "force";
       
-    // let groupingForce = forceInABox()
-    //   .strength(0.1) // Strength to foci
-    //   .template(template) // Either treemap or force
-    //   .groupBy("group") // Node attribute to group
-    //   .links(this.classEdges) // The graph links. Must be called after setting the grouping attribute
-    //   .size([PixiManager.width, PixiManager.height]); // Size of the chart
+      let groupingForce = forceInABox()
+        .strength(0.1) // Strength to foci
+        .template(template) // Either treemap or force
+        .groupBy("group") // Node attribute to group
+        .links(this.classEdges) // The graph links. Must be called after setting the grouping attribute
+        .size([PixiManager.width, PixiManager.height]); // Size of the chart
 
       this.simulation = simulation;
 
@@ -343,11 +298,9 @@ export class InteractiveScene extends Container implements IScene {
           .on('pointerup',(e)=>this.onDragEndNode(e,nodeData.gfx),this)
           .on('pointerupoutside',(e)=> this.onDragEndNode(e,nodeData.gfx),this)
           .on('pointermove', (e)=>this.onDragMoveNode(e,nodeData.gfx),this)
-        
-
-          // .on('tap',this.onTap,this)
-          // .on('mouseover',this.onMouseOver,this)
-          // .on('mouseout',this.onMouseOut,this)  
+          .on('tap',this.onTap,this)
+          .on('mouseover',this.onMouseOver,this)
+          .on('mouseout',this.onMouseOut,this)  
 
 
 
@@ -369,7 +322,7 @@ export class InteractiveScene extends Container implements IScene {
         // labelGfx.addChild(labelBackground);
         // labelGfx.addChild(label);
 
-        // nodeLabelsLayer.addChild(labelGfx)
+        nodeLabelsLayer.addChild(labelGfx)
 
         nodesLayer.addChild(nodeData.gfx)
 
@@ -845,12 +798,9 @@ export class InteractiveScene extends Container implements IScene {
 
     public update(framesPassed: number): void {
 
-      // ticker call this function with framepassed already
-
         this.timeElapsed = this.timeElapsed + framesPassed + 10
         if ( this.timeElapsed < 10){
             return
-            
         }
 
           this.classNodes.forEach((node) => {
@@ -882,18 +832,6 @@ export class InteractiveScene extends Container implements IScene {
           this.visualLinks.endFill();
           this.timeElapsed = 0
 
-        // Lets move clampy!
-        // this.clampy.x += this.clampyVelocity * framesPassed;
-
-        // if (this.clampy.x > PixiManager.width) {
-        //     this.clampy.x = PixiManager.width;
-        //     this.clampyVelocity = -this.clampyVelocity;
-        // }
-
-        // if (this.clampy.x < 0) {
-        //     this.clampy.x = 0;
-        //     this.clampyVelocity = -this.clampyVelocity;
-        // }
     }
 
     public resize(screenWidth: number, screenHeight: number): void {
@@ -907,24 +845,12 @@ export class InteractiveScene extends Container implements IScene {
           console.log("Click! node")
 
 
-          // Global position of the interaction
-          // e.data.global
-
-          // Local (inside clampy) position of the interaction
-          // e.data.getLocalPosition(this.clampy) 
-          // Remember Clampy has the 0,0 in its center because we set the anchor to 0.5!
     }
 
     private onClick(e: InteractionEvent): void {
         console.log("Click!")
 
 
-        // Global position of the interaction
-        // e.data.global
-
-        // Local (inside clampy) position of the interaction
-        // e.data.getLocalPosition(this.clampy) 
-        // Remember Clampy has the 0,0 in its center because we set the anchor to 0.5!
     }
 
     private onMouseDown(e: InteractionEvent): void {
@@ -1091,7 +1017,6 @@ export class InteractiveScene extends Container implements IScene {
 
     private onDragEndNode(e,node) {
         
-
         if(!e.active) this.simulation.alphaTarget(0);
         const from = this.toLocal(e.data.global)
         node.x = from.x
@@ -1140,8 +1065,7 @@ class Node extends Container{
   constructor(nodeData,circleTexture){
     super()
 
-        
-
+      
         this.gfx = new Graphics()
         this.gfx.x = nodeData.x
         this.gfx.y = nodeData.y
@@ -1177,14 +1101,6 @@ class Node extends Container{
 
     private onClick(e: InteractionEvent): void {
         console.log("Click!")
-
-
-        // Global position of the interaction
-        // e.data.global
-
-        // Local (inside clampy) position of the interaction
-        // e.data.getLocalPosition(this.clampy) 
-        // Remember Clampy has the 0,0 in its center because we set the anchor to 0.5!
     }
 
     private onMouseDown(e: InteractionEvent): void {
@@ -1250,17 +1166,11 @@ class Node extends Container{
     private onKeyDown(e: KeyboardEvent): void {
         console.log("KeyDown event fired!", e);
 
-        // Most likely, you will switch on this:
-        // e.code // if you care about the physical location of the key
-        // e.key // if you care about the character that the key represents
     }
 
     private onKeyUp(e: KeyboardEvent): void {
         console.log("KeyUp event fired!", e);
 
-        // Most likely, you will switch on this:
-        // e.code // if you care about the physical location of the key
-        // e.key // if you care about the character that the key represents
     }
 
     private onDragStart(e,node){
@@ -1306,7 +1216,6 @@ class Node extends Container{
         // label.x = from.x
         // label.y = from.y
 
-
       this.classEdges.forEach((link) => {
       console.log("line-source-x=",link.source.x,"line-source-y=",link.source.y,"line-target-x=",link.target.x,"line-source-y=",link.target.y)
         const {target ,source} = link
@@ -1333,7 +1242,6 @@ class Node extends Container{
 
     private onDragEnd(e,node) {
         
-
         if(!e.active) this.simulation.alphaTarget(0);
         const from = this.toLocal(e.data.global)
         node.x = from.x
@@ -1357,7 +1265,7 @@ class Node extends Container{
       });
       
 
-          this.visualLinks.endFill();
+        this.visualLinks.endFill();
 
         PixiManager.viewport.plugins.resume('drag')
 

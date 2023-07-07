@@ -4,7 +4,7 @@ import AppLeftSidebarDrawer from '../../layouts/AppLeftSidebarDrawer';
 import AppBodyContent from '../../layouts/AppBodyContent';
 import AppRightSidebarMiniDrawer from '../../layouts/AppRightSidebarMiniDrawer';
 import AppBottomBar from '../../layouts/AppBottomBar';
-// import MyCalendarWrapper from '../../features/schedule/index'
+import MyCalendarWrapper from '../../features/schedule/index'
 
 const CalendarPage = () => {
   return (
@@ -14,8 +14,8 @@ const CalendarPage = () => {
               
         </AppLeftSidebarDrawer>
 
-        <AppBodyContent title={"calendar"} >
-            {/* <MyCalendarWrapper/> */}
+        <AppBodyContent title={"calendar"}>
+            <MyCalendarWrapper/>
         </AppBodyContent>
 
         <AppRightSidebarMiniDrawer />

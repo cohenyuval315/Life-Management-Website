@@ -3,18 +3,18 @@ import { RRule } from 'rrule'
 import moment from 'moment';
 import { TZDate } from '@toast-ui/calendar';
 import {getUserObjects, getUserCalendars, createUserReminder, getUserReminders} from '../../../../../services/api/index';
-import { ClassicObject } from '../../../../../components/Object/ObjectLayout';
+import ClassicObject from '../../../../../components/form/Object/ObjectForm';
 import './EventForm.css'
 import { toLabelValueItemJson , validateInteger } from '../../../../../utils/helpers';
 import StyledButton from '../../../../../components/ui/Button/StyledButton';
 import StyledSelect from '../../../../../components/ui/Select/StyledSelect';
-import StyledTextField from '../../../../../components/ui/TextField/StyledTextField';
+import StyledTextField from '../../../../../components/ui/InputField/TextField/StyledTextField';
 
 import { makeStyles } from '@mui/styles';
-import ColorSelect from '../../../../../components/ui/ColorSelect/ColorSelect';
+import ColorSelect from '../../../../../components/ui/Select/ColorSelect/ColorSelect';
 
-import StyledDateTimePicker from '../../../../../components/ui/DateTimePicker/StyledDateTimePicker';
-import StyledDatePicker from '../../../../../components/ui/DatePicker/StyledDatePicker';
+import StyledDateTimePicker from '../../../../../components/ui/Time/DateTimePicker/StyledDateTimePicker';
+import StyledDatePicker from '../../../../../components/ui/Time/DatePicker/StyledDatePicker';
 import RRuleFormGenerator from '../RRule/RRuleFormGenerator';
 import ReminderForm from '../Reminder/ReminderForm';
 

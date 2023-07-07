@@ -6,7 +6,6 @@ import GamePage from './game/index'
 import GraphsPage from './graphs/index'
 import LivePage from './live/index'
 import MasterListPage from './masterlist/index'
-import MealsPage from './meals/index'
 import ObjectivesPage from './objectives/index'
 import PlannerPage from './planner/index'
 import RecurringPage from './reccuring/index'
@@ -40,7 +39,6 @@ AccessDeniedPage,
  LivePage,
  LoginPage,
  MasterListPage,
- MealsPage,
  ObjectivesPage,
  PlannerPage,
  RecurringPage,

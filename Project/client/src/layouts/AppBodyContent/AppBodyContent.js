@@ -49,11 +49,9 @@ const AppBodyContent = ({leftHeaderItems,title,rightHeaderItems,children}) => {
         </div>
         <div id='#appbodycontent-body-vertical-flexbox'>
             <div id='appbodycontent-body-vertical-flexbox-horizontal-flexbox'>
-                <div id='appbodycontent-body-content-wrapper'>
                     <div id='appbodycontent-body-content-wrapper'>
                             {children&&children}
                     </div>
-                </div>
                 <AppRightSidebarDrawer/>
             </div>
         </div>

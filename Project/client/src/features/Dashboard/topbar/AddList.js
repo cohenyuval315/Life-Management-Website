@@ -1,17 +1,14 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Popover from "@material-ui/core/Popover";
-import FormLabel from "@material-ui/core/FormLabel";
-import FormControl from "@material-ui/core/FormControl";
-import FormGroup from "@material-ui/core/FormGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import IconButton from "@material-ui/core/IconButton";
-import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import { makeStyles } from "@mui/styles";
+import {Popover} from "@mui/material";
+import {FormControlLabel,FormGroup,FormControl,FormLabel} from "@mui/material";
+
+import { Checkbox } from "@mui/material";
+import { Icons } from "../../../assets";
 
 const useStyles = makeStyles((theme) => ({
   popup: {
-    padding: theme.spacing(2)
+    // padding: theme.spacing(2)
   }
 }));
 
@@ -53,9 +50,9 @@ export default function AddList({
 
   return (
     <>
-      <IconButton aria-label="add" onClick={handleClick} aria-describedby={id}>
-        <AddCircleOutlineIcon />
-      </IconButton>
+      <div aria-label="add" onClick={handleClick} aria-describedby={id}>
+        {Icons.faCircle}
+      </div>
       <Popover
         id={id}
         open={open}
