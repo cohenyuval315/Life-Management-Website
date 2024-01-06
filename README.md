@@ -1,5 +1,5 @@
 # LifeManagerWebsite
-Flask React SQLAlchamy MongoDB Telegram Pixi-js D3-js webpack typescript Markdown
+Flask React MongoDB Telegram Pixi-js D3-js webpack typescript Markdown
 
 
 # Dashboard
